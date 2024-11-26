@@ -2,7 +2,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import SideDrawer from './components/SideDrawer';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import HomePage from './pages/HomePage';
@@ -15,7 +14,6 @@ function App() {
     <div>
       <Router>
         <Navbar />
-        <SideDrawer />
         
         <Routes>
           <Route path="/" element={<HomePage />} /> 

@@ -64,7 +64,7 @@ const HomePage = () => {
             }}
           >
             <Typography variant="h2" sx={{ fontWeight: 'bold', color: 'white' }}>
-              Heart Disease & Diabetes Prediction
+              Heart Disease Prediction
             </Typography>
             <Typography variant="h5" sx={{ marginTop: '16px', color: 'white' }}>
               Accurate predictions to help you live healthier
@@ -74,11 +74,20 @@ const HomePage = () => {
               to="/prediction"
               variant="contained"
               sx={{
-                backgroundColor: '#1976d2',
+                color: 'black',
+                backgroundColor: 'white',
+                borderRadius: '50px',
                 padding: '12px 24px',
-                fontSize: '16px',
-                marginTop: '24px',
-                '&:hover': { backgroundColor: '#1565c0' },
+                margin: '0 10px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)',
+                transform: 'translateY(0)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                '&:hover': {
+                  backgroundColor: 'lightgreen',
+                  transform: 'translateY(-6px)',
+                  boxShadow: '0 8px 12px rgba(0, 0, 0, 0.3)',
+                },
+                marginTop: '30px',
               }}
             >
               Start Prediction
